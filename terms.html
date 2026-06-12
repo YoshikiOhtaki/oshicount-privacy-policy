@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>利用規約 - オシカド</title>
+  <style>
+    :root {
+      --bg: #0a0a0f;
+      --surface: #16161f;
+      --border: #2a2a38;
+      --accent: #FF5C8A;
+      --text-primary: #f0f0f5;
+      --text-secondary: #8888aa;
+      --radius: 12px;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--bg);
+      color: var(--text-primary);
+      font-family: -apple-system, "Hiragino Sans", "Hiragino Kaku Gothic ProN", sans-serif;
+      font-size: 16px;
+      line-height: 1.8;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    header {
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      padding: 16px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 700;
+      font-size: 18px;
+      color: var(--text-primary);
+      text-decoration: none;
+    }
+    .logo-heart {
+      font-size: 22px;
+      color: var(--accent);
+    }
+    nav {
+      display: flex;
+      gap: 20px;
+      font-size: 14px;
+    }
+    nav a { color: var(--text-secondary); }
+    nav a.active, nav a:hover {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    main {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 48px 24px 80px;
+    }
+    .page-title {
+      font-size: 28px;
+      font-weight: 800;
+      color: var(--text-primary);
+      margin-bottom: 8px;
+      letter-spacing: -0.5px;
+    }
+    .page-title span { color: var(--accent); }
+    .last-updated {
+      font-size: 13px;
+      color: var(--text-secondary);
+      margin-bottom: 40px;
+    }
+
+    section { margin-bottom: 36px; }
+    h2 {
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--text-primary);
+      margin-bottom: 12px;
+      padding-left: 12px;
+      border-left: 3px solid var(--accent);
+    }
+    p { color: var(--text-secondary); margin-bottom: 12px; }
+    ul, ol { padding-left: 20px; color: var(--text-secondary); }
+    li { margin-bottom: 6px; }
+
+    .highlight-box {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 20px 24px;
+      margin-bottom: 16px;
+    }
+    .highlight-box p { margin-bottom: 0; }
+
+    .article-num {
+      display: inline-block;
+      background: var(--accent);
+      color: #fff;
+      font-size: 12px;
+      font-weight: 700;
+      border-radius: 4px;
+      padding: 1px 8px;
+      margin-right: 6px;
+      vertical-align: middle;
+    }
+
+    .contact-link {
+      color: var(--accent);
+      font-family: monospace;
+      font-size: 14px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 32px 24px;
+      border-top: 1px solid var(--border);
+      color: var(--text-secondary);
+      font-size: 13px;
+    }
+    footer a { color: var(--text-secondary); margin: 0 8px; }
+    footer a:hover { color: var(--accent); }
+
+    @media (max-width: 600px) {
+      .page-title { font-size: 22px; }
+      nav { gap: 12px; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <a class="logo" href="index.html">
+    <span class="logo-heart">♥</span> オシカド
+  </a>
+  <nav>
+    <a href="index.html">プライバシーポリシー</a>
+    <a href="terms.html" class="active">利用規約</a>
+  </nav>
+</header>
+
+<main>
+  <h1 class="page-title">利用<span>規約</span></h1>
+  <p class="last-updated">最終更新日：2026年6月13日</p>
+
+  <div class="highlight-box">
+    <p>本利用規約（以下「本規約」）は、Yoshiki Ohtaki（以下「開発者」）が提供するアプリケーション「オシカド（OshiCount）」（以下「本アプリ」）の利用条件を定めるものです。本アプリをご利用になる前に、本規約をよくお読みください。本アプリをインストール・使用した時点で、本規約に同意いただいたものとみなします。</p>
+  </div>
+
+  <!-- 第1条 -->
+  <section>
+    <h2><span class="article-num">第1条</span>サービスの概要</h2>
+    <p>本アプリは、推し活を楽しむユーザーを対象とした、以下の機能を提供するiOSアプリケーションです。</p>
+    <ul>
+      <li>推しのイベント（ライブ・誕生日・周年等）までのカウントダウン表示</li>
+      <li>推し歴（推し始めた日からの日数）の管理</li>
+      <li>イベントカードの作成・シェア（カードスタジオ機能）</li>
+      <li>ホーム画面ウィジェットへのカウントダウン表示</li>
+      <li>節目（100日・1000日等）や周年の通知</li>
+    </ul>
+    <p>一部の機能はPro版（有料サブスクリプション・買い切り）の購入が必要です。</p>
+  </section>
+
+  <!-- 第2条 -->
+  <section>
+    <h2><span class="article-num">第2条</span>利用条件</h2>
+    <ul>
+      <li>本アプリはiOS 17.0以降を搭載したApple製デバイスでご利用いただけます。</li>
+      <li>Apple IDおよびApp Storeへのアクセスが必要です。</li>
+      <li>本アプリの利用は個人・非商用目的に限ります。</li>
+      <li>13歳未満の方は保護者の同意のもとでご利用ください。</li>
+    </ul>
+  </section>
+
+  <!-- 第3条 -->
+  <section>
+    <h2><span class="article-num">第3条</span>禁止事項</h2>
+    <p>ユーザーは本アプリを利用するにあたり、以下の行為を行ってはなりません。</p>
+    <ul>
+      <li>本アプリのリバースエンジニアリング、逆コンパイル、逆アセンブル</li>
+      <li>本アプリのコード・デザインの複製・改変・再配布</li>
+      <li>本アプリを通じた違法なコンテンツの作成・共有</li>
+      <li>著作権・肖像権・プライバシー権等を侵害するコンテンツの作成</li>
+      <li>実在する人物・団体を誹謗中傷するコンテンツの作成・拡散</li>
+      <li>本アプリの正常な運営を妨害する行為</li>
+      <li>その他、法令または公序良俗に反する行為</li>
+    </ul>
+  </section>
+
+  <!-- 第4条 -->
+  <section>
+    <h2><span class="article-num">第4条</span>サブスクリプション・課金</h2>
+    <p>本アプリはApp Store経由で以下の有料プランを提供しています。</p>
+    <ul>
+      <li><strong style="color:var(--text-primary)">月額プラン：</strong>毎月自動更新されるサブスクリプション</li>
+      <li><strong style="color:var(--text-primary)">年間プラン：</strong>年1回自動更新されるサブスクリプション（初回7日間無料トライアル付き）</li>
+      <li><strong style="color:var(--text-primary)">買い切りプラン：</strong>一度の購入で永続的にPro機能をご利用いただけます</li>
+    </ul>
+    <p>サブスクリプションに関する重要事項：</p>
+    <ul>
+      <li>料金はApple IDに登録されたお支払い方法に請求されます。</li>
+      <li>更新日の24時間前までにキャンセルしない限り、自動的に更新されます。</li>
+      <li>更新料金は更新の24時間前にお支払い方法に請求されます。</li>
+      <li>無料トライアル期間中にキャンセルした場合、料金は発生しません。</li>
+      <li>サブスクリプションのキャンセルは「設定」アプリ →「Apple ID」→「サブスクリプション」から行えます。</li>
+      <li>購入・キャンセルはすべてApple Inc.のApp Storeポリシーに従います。</li>
+    </ul>
+    <p>払い戻しに関するご要望はApp Storeのサポート（<a href="https://reportaproblem.apple.com/" target="_blank">reportaproblem.apple.com</a>）にお問い合わせください。</p>
+  </section>
+
+  <!-- 第5条 -->
+  <section>
+    <h2><span class="article-num">第5条</span>知的財産権</h2>
+    <p>本アプリのデザイン・コード・ロゴ・テキスト等の著作権はYoshiki Ohtakiに帰属します。</p>
+    <p>ユーザーが本アプリを通じて作成したカード画像等のコンテンツの著作権はユーザー本人に帰属します。ただし、他者の著作権・肖像権を侵害するコンテンツの作成は禁止します。</p>
+  </section>
+
+  <!-- 第6条 -->
+  <section>
+    <h2><span class="article-num">第6条</span>免責事項</h2>
+    <ul>
+      <li>本アプリは現状のまま（AS IS）提供されます。開発者は本アプリの完全性・正確性・特定目的への適合性を保証しません。</li>
+      <li>本アプリの利用または利用不能により生じたいかなる損害（データ損失・機会損失等を含む）についても、開発者は一切の責任を負いません。</li>
+      <li>アプリのアップデートにより機能が変更・削除される場合があります。</li>
+      <li>iOS・App Storeのポリシー変更により、本アプリの提供が停止される場合があります。</li>
+      <li>本アプリが表示するカウントダウン・日数計算は参考値です。重要な日程管理には別途ご確認ください。</li>
+      <li>特定のアーティスト・作品・タレントとの公式な提携関係はありません。</li>
+    </ul>
+  </section>
+
+  <!-- 第7条 -->
+  <section>
+    <h2><span class="article-num">第7条</span>サービスの変更・終了</h2>
+    <p>開発者は事前の通知なく、本アプリの機能追加・変更・一部停止・サービス終了を行う場合があります。サービス終了に伴う返金は、Apple Inc.のポリシーに準じます。</p>
+  </section>
+
+  <!-- 第8条 -->
+  <section>
+    <h2><span class="article-num">第8条</span>規約の変更</h2>
+    <p>開発者は必要に応じて本規約を変更することがあります。変更後の規約は本ページに掲載した時点から効力を生じます。重要な変更の場合はアプリ内でお知らせします。変更後も本アプリを引き続き利用した場合、変更後の規約に同意したものとみなします。</p>
+  </section>
+
+  <!-- 第9条 -->
+  <section>
+    <h2><span class="article-num">第9条</span>準拠法・管轄裁判所</h2>
+    <p>本規約は日本法に準拠し、日本法に従って解釈されます。本アプリの利用に関して紛争が生じた場合、開発者の住所を管轄する日本の裁判所を専属的合意管轄裁判所とします。</p>
+  </section>
+
+  <!-- 第10条 -->
+  <section>
+    <h2><span class="article-num">第10条</span>お問い合わせ</h2>
+    <p>本規約に関するご質問・ご意見は以下までご連絡ください。</p>
+    <p>開発者：Yoshiki Ohtaki</p>
+    <p><a class="contact-link" href="mailto:08077374459y.o@gmail.com">08077374459y.o@gmail.com</a></p>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2026 Yoshiki Ohtaki</p>
+  <p style="margin-top:8px;">
+    <a href="index.html">プライバシーポリシー</a>
+    <a href="terms.html">利用規約</a>
+  </p>
+</footer>
+
+</body>
+</html>
